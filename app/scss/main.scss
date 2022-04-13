@@ -1,0 +1,69 @@
+// Fonts
+@import "./fonts";
+
+//Custom Theme
+@import "./customTheme";
+
+//bootstrap 5
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+// Own styles
+// global
+@import "./global";
+
+//typography
+@import "./typography";
+
+//blocks
+@import "./blocks/header";
+
+
+
+//startseite
+@import "./blocks/hero";
+@import "./blocks/cta-start";
+@import "blocks/slogan-banner";
+@import "./blocks/review";
+@import "./blocks/check";
+@import "./blocks/recommend";
+@import "./blocks/game-banner";
+@import "./blocks/game-wheel";
+@import "./blocks/course-hero";
+
+
+//leistungseite
+@import "./blocks/health";
+@import "./blocks/sidebar";
+@import "./blocks/trial-training";
+
+//aboutseite
+@import "./blocks/about-hero";
+@import "./blocks/team";
+
+//news
+@import "./blocks/news-hero";
+@import "./blocks/news-cards";
+
+// Contact
+@import "blocks/contact-form";
+@import "blocks/contact-cards";
+@import "blocks/map";
+
+@import "./footer";
+
+
+
+//Components
+@import "./components/quote-card";
+@import "./components/line-behindText";
+@import "components/wave-border";
+@import "components/check-list";
+@import "components/course-table";
+@import "components/chart";
+@import "components/call-modall";
+@import "components/accord-calender";
+@import "components/arrow-top";
+
+
+

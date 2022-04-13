@@ -1,0 +1,33 @@
+
+.header {
+  z-index: 1000;
+}
+
+ .header__navbar {
+
+   ul {
+
+     //gap
+     & > * + * {
+       margin-left: 2rem;
+     }
+     & > li {
+       border-radius: 10px 10px 0 0;
+       transition: background-color 0.3s ease-in-out;
+       text-align: center;
+       list-style: none;
+
+       &:hover, &.active {
+         background-color: $secondary;
+       }
+       a {
+         display: block;
+         font-size: 22px;
+         font-family: 'RobotoCondensed', sans-serif;
+         font-weight: bold;
+         line-height: 25.2px;
+         padding: 10px 13px 25px 13px;
+       }
+     }
+   }
+ }

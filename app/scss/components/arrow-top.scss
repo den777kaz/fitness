@@ -1,0 +1,31 @@
+.arrow--top {
+  $iconWidth: 30px;
+  position: relative;
+
+  @media (max-width: 768px){
+    margin-left: $iconWidth;
+  }
+  @media (max-width: 576px){
+    margin-left: 20px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/dest/Icon feather-arrow-down-right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: $iconWidth;
+    height: $iconWidth;
+
+
+    bottom: 100%;
+    right: 100%;
+
+    @media (max-width: 576px){
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

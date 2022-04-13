@@ -1,0 +1,28 @@
+.review {
+  padding: 10rem 0;
+
+  .review__bg-graphic {
+
+    img {
+      width: 100%;
+    }
+    z-index: 0;
+    position: absolute;
+    width: 900px;
+    left: -330px;
+    top: -210px;
+
+    @media (max-width: 768px) {
+      left: -430px;
+      top: -310px;
+      width: 760px;
+    }
+  }
+
+  .side-scroll {
+  @media (max-width: 768px) {
+    overflow-x: auto;
+  }
+
+  }
+}

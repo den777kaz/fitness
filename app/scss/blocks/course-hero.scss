@@ -1,0 +1,27 @@
+.course-hero {
+  padding-top: 10rem;
+
+  @media (max-width: 992px) {
+    padding-top: 5rem;
+  }
+
+  .course__ellipse {
+    top: 10%;
+  }
+  .course__icon {
+    top: -70px;
+
+
+    @media (max-width: 1200px) {
+      right: 0 !important;
+    }
+
+    img {
+      width: 115px;
+
+      @media (max-width: 992px) {
+        width: 90px;
+      }
+    }
+  }
+}

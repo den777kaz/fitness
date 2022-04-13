@@ -1,0 +1,51 @@
+
+.chart {
+  position: relative;
+  width: 100%;
+  //width: 900px;
+  //height: 800px;
+
+  border-bottom: 4px solid $secondary;
+  ul {
+
+    li {
+      position: absolute;
+      transform-origin: left;
+      transform: rotate(-45deg);
+      font-weight: bold;
+      font-size: 24px;
+      bottom: 0;
+      width: fit-content;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: -38px;
+        top: 50%;
+        transform: translatey(-50%);
+
+        background-color: $secondary;
+        border-radius: 50%;
+        border: 5px solid white;
+      }
+
+      &:nth-child(1){
+        left: 1%;
+      }
+      &:nth-child(2){
+        left: 20%;
+      }
+      &:nth-child(3){
+        left: 40%;
+      }
+      &:nth-child(4){
+        left: 60%;
+      }
+      &:nth-child(5){
+        left: 80%;
+      }
+    }
+  }
+}

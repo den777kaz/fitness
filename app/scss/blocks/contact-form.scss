@@ -1,0 +1,40 @@
+.contact-form {
+  position: relative;
+
+  z-index: 1;
+
+
+  @media (min-width: 1500px) {
+    top: -120px;
+    padding: 50px 0;
+    outline: 4px solid $dark;
+  }
+  @media (min-width: 1500px) {
+
+  }
+
+
+  form {
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+
+    @media (min-width: 1500px) {
+      left: 5%;
+    }
+
+    input {
+      border-radius: 20px;
+      @media (max-width: 992px) {
+        border-radius: 10px;
+      }
+    }
+    .form-check-input {
+      border-radius: 3px;
+    }
+    .form-check-input:checked {
+      background-color: $dark;
+      border-radius: 3px;
+    }
+  }
+}

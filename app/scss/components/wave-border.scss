@@ -1,0 +1,23 @@
+.wave--border {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 100px 0;
+
+  @media (max-width: 992px) {
+    margin: 50px 0;
+  }
+
+  img {
+    display: block;
+    position: relative;
+
+    width: 160%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    object-fit: cover;
+  }
+}

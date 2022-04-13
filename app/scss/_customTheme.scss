@@ -1,0 +1,74 @@
+//Colors
+//$yellow: #f7e143;
+//$primary: $yellow;
+$secondary: #f7e143; // yellow
+
+// typography
+$font-family-sans-serif:      'SourceSansPro',system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$display-font-sizes: (
+        1: 5rem,
+        2: 4.5rem,
+        3: 4rem,
+        4: 3.5rem,
+        5: 3rem,
+        6: 2.5rem
+);
+
+//$display-font-weight: 300;
+//$display-line-height: $headings-line-height;
+
+//Buttons
+$input-btn-padding-y:         .8rem;
+$input-btn-padding-x:         1.8rem;
+$input-btn-font-family:       'RobotoCondensed';
+$input-btn-font-size:         1.5rem;
+$btn-font-weight:             bold;
+$btn-border-width:            4px;
+
+$btn-border-radius:           0px;
+$btn-border-radius:           0;
+$btn-border-radius-sm:        0;
+$btn-border-radius-lg:        0;
+
+
+
+//z-index
+
+.z-index-1 {
+  z-index: 1;
+}
+.z-index-2 {
+  z-index: 2;
+}
+.z-index-3 {
+  z-index: 3;
+}
+
+//possitions top
+.top-n-7rem {
+
+  @media (min-width: 1500px) {
+    top: -7rem;
+  }
+}
+
+// images clip paths
+.contact-clip-path {
+  clip-path: url(#svgPath-contact);
+}
+.news-clip-path {
+  clip-path: url(#svgPath-news);
+}
+.about-clip-path-left {
+  clip-path: url(#svgPath-about-bottom-left);
+}
+.about-clip-path-right {
+  clip-path: url(#svgPath-about-bottom-right);
+}
+.courses-clip-path {
+  clip-path: url(#svgPath-courses);
+}
+.leistung-clip-path {
+  clip-path: url(#svgPath-liestung);
+}

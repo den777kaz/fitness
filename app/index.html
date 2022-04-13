@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/app.min.css" />
+    <title>Fitness</title>
+  </head>
+  <body class="bg-dark">
+  <!-- ------------------------header---------------------------------------- -->
+  <header class="header w-100 position-absolute start-0 top-0">
+    <div class="container-fluid maxW1600">
+      <div class="border-bottom border-dark d-flex justify-content-between align-items-end">
+<!--        dropdown mobile-->
+        <div class="dropdown d-lg-none">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+            Menü
+          </button>
+          <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenu2">
+            <li><a class="dropdown-item fs-3 text-center" href="./index.html">Startseite</a></li>
+            <li><a class="dropdown-item fs-3" href="./leistung.html">Leistung</a></li>
+            <li><a class="dropdown-item fs-3" href="./courses.html">Kurse</a></li>
+            <li><a class="dropdown-item fs-3" href="./about.html">Über uns</a></li>
+            <li><a class="dropdown-item fs-3" href="./news.html">News</a></li>
+            <li><a class="dropdown-item fs-3" href="./contact.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <nav class="header__navbar d-none d-lg-block pt-4">
+          <ul class="d-flex">
+            <li class="active">
+              <a href="./index.html">Startseite</a>
+            </li>
+            <li>
+              <a href="./leistung.html">Leistung</a>
+            </li>
+            <li>
+              <a href="./courses.html">Kurse</a>
+            </li>
+            <li>
+              <a href="./about.html">Über uns</a>
+            </li>
+            <li>
+              <a href="./news.html">News</a>
+            </li>
+            <li>
+              <a href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__logo bg-secondary d-flex justify-content-center align-items-center px-2 py-1">
+          <img src="./images/dest/logo.png" alt="Logo">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="mt-3">
+<!-- -------------------------section 1 HERO--------------------------------------   -->
+    <section class="hero position-relative">
+      <div class="container-fluid maxW1600">
+        <div class="row">
+          <div class="hero__content col-lg-7">
+            <h1 class="text-sm-start text-center">WILLKOMMEN IM FITMOTION FITNESSSTUDIO</h1>
+            <div class="border border-dark w-50 mx-auto mx-sm-0 my-4 my-md-3"></div>
+            <div class="hero__text mt-4 ">
+              <p>
+                Hallo, mein Name ist Jens Buse, ich bin Geschäftsführer des
+                Fitnessstudio & Personal Training in Bruchsal.
+              </p>
+              <p>
+                Basierend auf unserer Jahrelangen Expertise, haben wir ein
+                Konzept entwickelt, dass unsere Mitglieder mit geringsten
+                Zeitaufwand gezielter, schneller & effektiver in Höchstform
+                bringt.
+              </p>
+              <p>Bereit durchzustarten?</p>
+            </div>
+            <div class="mt-5 text-center text-sm-start">
+              <a class="btn btn-outline-dark " href="#" role="button">Probetraining vereinbaren</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero__graphic">
+        <img class="ellipse" src="./images/dest/home/Ellipse.svg" alt="elipse" />
+        <svg
+          class="arm"
+          width="752"
+          height="769"
+          viewBox="0 0 752 769"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="Group">
+            <path
+              id="bg"
+              d="M488.256 416.731C480.4 410.221 471.867 404.576 462.803 399.894C413.162 373.954 363.219 370.375 310.476 393.894C299.756 398.674 291.469 402.108 284.092 408.667L283.092 407.667C277.003 397.088 270.259 384.579 269.685 372.448C267.126 318.333 264.685 264.199 260.797 210.173C260.254 202.623 254.966 187.002 254.966 187.002L255.092 187.667C255.092 187.667 289.303 181.545 302.484 169.367C303.733 168.213 308.136 168.023 310.89 170.767C315.74 175.6 321.076 179.942 326.19 184.514C342.061 198.714 352.557 198.575 367.118 182.733C386.223 161.949 405.005 140.87 423.463 119.496C432.463 109.047 434.298 97.302 425.285 85.42C411.036 66.636 396.361 48.153 382.733 28.928C374.124 16.783 366.276 15.316 361.095 0.666L360.595 0C327.021 11.7 290.355 28.568 257.927 42.876C227.405 56.343 198.437 74.043 166.992 84.476C143.892 92.139 141.8 110.705 137.227 126.621C122.042 179.463 107.55 232.514 92.4818 285.412C73.9448 350.489 56.7678 416.012 41.5078 481.929C35.8848 506.214 29.7717 531.192 32.1077 556.977C32.9567 566.36 34.2357 573.847 44.2747 577.529C85.8627 592.781 117.224 624.113 153.718 647.384C193.734 672.901 233.941 697.969 281.713 707.61C302.161 711.737 322.407 716.803 343.283 717.438C387.291 718.776 431.251 717.545 474.806 710.57C494.306 707.447 513.5 702.437 532.955 698.97C537.825 698.102 543.83 698.537 548.193 700.67C607.714 729.743 670.376 740.812 736.228 734.696C741.309 734.224 746.473 734.634 751.598 734.634V379.274C740.339 381.11 734.181 371.774 726.075 367.133C686.084 344.247 644.396 332.027 597.803 341.519C563.482 348.511 536.02 366.337 512.428 391.244C504.946 399.144 496.798 407.989 489.395 415.962L488.256 416.731Z"
+              fill="#F7E143"
+            />
+            <g id="Group_2">
+              <path
+                id="line5"
+                d="M328.233 29.998C294.659 41.698 263.352 58.5661 230.924 72.8741C200.402 86.3411 171.434 104.041 139.989 114.474C116.889 122.137 114.797 140.703 110.224 156.619C95.0388 209.461 65.4788 315.41 65.4788 315.41C65.4788 315.41 20.3618 447.379 5.10182 513.292C-0.521178 537.577 2.76882 561.192 5.10182 586.975C5.95082 596.358 7.22982 603.845 17.2688 607.527C58.8568 622.779 90.2178 654.111 126.712 677.382C166.728 702.899 206.935 727.967 254.707 737.608C275.155 741.735 295.401 746.801 316.277 747.436C360.285 748.774 404.245 747.543 447.8 740.568C467.3 737.445 486.494 732.435 505.949 728.968C510.819 728.1 516.824 728.535 521.187 730.668C580.708 759.741 643.37 770.81 709.222 764.694C714.303 764.222 719.467 764.632 724.592 764.632"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="line01"
+                d="M157.392 587.805C187.678 629.538 227.131 657.414 276.83 672.866C318.43 685.801 359.899 683.944 401.596 678.425C408.907 677.457 416.538 677.135 423.91 675.79"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="line4"
+                d="M724.592 409.273C713.333 411.109 707.175 401.773 699.069 397.132C659.078 374.246 617.39 362.026 570.797 371.518C536.476 378.51 509.014 396.336 485.422 421.243C477.94 429.143 470.603 437.177 463.2 445.15"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="line3"
+                d="M329.087 23.1641C334.268 37.8141 347.121 46.7811 355.73 58.9261C369.358 78.1511 384.03 96.6341 398.282 115.418C407.295 127.3 405.46 139.045 396.46 149.494C378.036 170.882 359.254 191.961 340.115 212.731C325.554 228.573 315.058 228.71 299.187 214.512C294.076 209.94 288.74 205.598 283.887 200.765C281.133 198.02 276.73 198.21 275.481 199.365C262.3 211.543 243.706 208.338 229.14 216.219"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="line2"
+                d="M215.475 211.947C233.998 213.171 232.998 229.062 233.797 240.17C237.687 294.196 240.126 348.33 242.685 402.445C243.259 414.576 247.702 430.351 253.791 440.93"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="line1"
+                d="M500.786 514.487C492.767 476.019 469.943 448.733 435.803 430.892C386.162 404.952 336.219 401.373 283.476 424.892C257.776 436.351 241.571 450.768 235.398 478.483C232.753 490.36 225.555 503.02 208.642 500.821"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="line02"
+                d="M632.336 600.617C635.182 601.192 638.648 599.086 640.863 602.336C661.152 632.106 693.763 633.075 724.592 638.203"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <!-- call action -->
+      <div class="call-action d-none d-lg-block">
+        <!-- form -->
+        <div class="call-action__form">
+          <h2 class="call-action__title">Kontakt</h2>
+          <div class="callMe-buttons">
+            <button class="callMe__btn" type="button">Rückruf vereinbarn</button>
+            <button class="callMe__btn" type="button">Probetraining vereinbaren</button>
+            <button class="callMe__btn" type="button">Ich benötige weitere Infos</button>
+
+            <div class="callMe__info">
+              <div class="callMe__info-map">
+                <div id="mymap-canvas" style="height: 100%; width: 100%; max-width: 100%">
+                  <iframe
+                    style="height: 100%; width: 100%; border: 0"
+                    frameborder="0"
+                    src="https://www.google.com/maps/embed/v1/place?q=Würrtembergerstr.+119+76446+Bruchsal&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                  ></iframe>
+                </div>
+                <a
+                  class="codefor-googlemap"
+                  rel="nofollow"
+                  href="https://www.embed-map.com"
+                  id="authorizemap-data"
+                >https://www.embed-map.com</a
+                >
+                <style>
+                  #mymap-canvas img {
+                    max-width: none !important;
+                    background: none !important;
+                    font-size: inherit;
+                    font-weight: inherit;
+                  }
+                </style>
+              </div>
+              <div class="callMe__info-contact">
+                <ul>Tel.:
+                  <li><a href="tel:069861111">0 69 86 11 11</a></li>
+                </ul>
+                <ul>E-Mail:
+                  <li><a href="mailto:kontakt@finest-fit.de">kontakt@finest-fit.de</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="call-action__bg"></div>
+        <button type="button" id="do_show" class="call-action__callBtn">
+          <img  src="./images/dest/phoneIcon.svg" alt=" call icon">
+        </button>
+        <button class="call-action__closeBtn">X</button>
+      </div>
+    </section>
+
+    <div class="wave--border">
+      <img src="./images/dest/home/wave.svg" alt="wave">
+    </div>
+<!-- -------------------------section 2 CTA-START--------------------------------------   -->
+    <section class="cta-start">
+      <div class="container-fluid maxW1600">
+        <div class="row align-items-center">
+          <div class="col col-xl-7">
+            <div class="row justify-content-evenly">
+              <div class="col-6 cta-start__image position-relative">
+                <img class="img-fluid" src="./images/dest/home/Gruppe%20971.png" alt=training">
+              </div>
+              <div class="col-6 cta-start__image position-relative">
+                <img class="img-fluid" src="./images/dest/home/Gruppe%20972.png" alt=training">
+              </div>
+            </div>
+          </div>
+          <div class="cta-start__info mt-5 mt-xl-0 col-xl-5 text-center text-xl-start">
+            <h2 class="line--behind"><span>ihr weg zum</span> <span>persönlichen</span> <span>glück</span></h2>
+            <p>
+              Starten Sie noch heute mit Ihrem Training
+            </p>
+            <div class="mt-5 ">
+              <a class="btn btn-outline-dark " href="#" role="button">Probetraining vereinbaren</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- -------------------------section 3 BANNER--------------------------------------   -->
+    <section class="slogan-banner position-relative container-fluid text-center d-flex align-items-center justify-content-center">
+      <h2>überzeuge dich selbst</h2>
+    </section>
+
+<!-- -------------------------section 4 REVIEW--------------------------------------   -->
+    <section class="review position-relative">
+      <div class="review__bg-graphic">
+        <img class="ellipse" src="./images/dest/home/Ellipse.svg" alt="ellipse" />
+      </div>
+      <div class="container-fluid maxW1600">
+        <div class="row side-scroll flex-nowrap flex-md-wrap justify-content-md-evenly position-relative">
+
+          <!--   component     -->
+          <div class="review__item quote--special me-lg-5 position-relative">
+            <div class="review__item-quote">
+              <img
+                      class="review__quoteIcon"
+                      src="./images/dest/quoteIcon.svg"
+                      alt="quote"
+              />
+              <p>
+                hilft zuverlässig gegen Rückschmerzen. Super Fachkräfte, viele
+                Geräte, nette Leute!
+              </p>
+            </div>
+            <div class="quote-author">
+              <div class="author__avatar">
+                <img src="./images/dest/avatar.png" alt="avatar" />
+              </div>
+              <div class="author__name">
+                <h4>Rocker Kunze</h4>
+                <div class="author__stars">
+                  <img src="./images/dest/star-black.svg" alt="star" />
+                  <img src="./images/dest/star-black.svg" alt="star" />
+                  <img src="./images/dest/star-black.svg" alt="star" />
+                  <img src="./images/dest/star-black.svg" alt="star" />
+                  <img src="./images/dest/star-black.svg" alt="star" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--   component     -->
+          <div class="review__item">
+            <div class="review__item-quote">
+              <img
+                      class="review__quoteIcon"
+                      src="./images/dest/quoteIcon.svg"
+                      alt="quote"
+              />
+              <p>
+                hilft zuverlässig gegen Rückschmerzen. Super Fachkräfte, viele
+                Geräte, nette Leute!
+              </p>
+            </div>
+            <div class="quote-author">
+              <div class="author__avatar">
+                <img src="./images/dest/avatar.png" alt="avatar" />
+              </div>
+              <div class="author__name">
+                <h4>Rocker Kunze</h4>
+                <div class="author__stars">
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--   component     -->
+          <div class="review__item">
+            <div class="review__item-quote">
+              <img
+                      class="review__quoteIcon"
+                      src="./images/dest/quoteIcon.svg"
+                      alt="quote"
+              />
+              <p>
+                hilft zuverlässig gegen Rückschmerzen. Super Fachkräfte, viele
+                Geräte, nette Leute!
+              </p>
+            </div>
+            <div class="quote-author">
+              <div class="author__avatar">
+                <img src="./images/dest/avatar.png" alt="avatar" />
+              </div>
+              <div class="author__name">
+                <h4>Rocker Kunze</h4>
+                <div class="author__stars">
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--   component     -->
+          <div class="review__item">
+            <div class="review__item-quote">
+              <img
+                      class="review__quoteIcon"
+                      src="./images/dest/quoteIcon.svg"
+                      alt="quote"
+              />
+              <p>
+                hilft zuverlässig gegen Rückschmerzen. Super Fachkräfte, viele
+                Geräte, nette Leute!
+              </p>
+            </div>
+            <div class="quote-author">
+              <div class="author__avatar">
+                <img src="./images/dest/avatar.png" alt="avatar" />
+              </div>
+              <div class="author__name">
+                <h4>Rocker Kunze</h4>
+                <div class="author__stars">
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                  <img src="./images/dest/star.svg" alt="star" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <a class="btn btn-outline-dark " href="#" role="button">Probetraining vereinbaren</a>
+        </div>
+      </div>
+    </section>
+
+<!-- -------------------------section 5 check--------------------------------------   -->
+    <section class="check">
+      <div class="container-xxl ">
+
+      <div class="row justify-content-around justify-content-xl-between">
+        <div class="check__check col col-xl-6 order-2 order-xxl-0 mx-auto mx-lg-0 d-flex flex-column align-items-center d-lg-block">
+          <img class="check__icon" src="./images/dest/checkIcon.svg" alt="check icon">
+          <h2 class="line--behind mt-4"><span>gesundheits-</span><span>check</span></h2>
+          <h3 class="text-center text-lg-start">Wieso du unseren ONLINE-TEST machen sollst:</h3>
+
+          <div class="check--list mt-5">
+            <div class="item">
+              <img src="./images/dest/checked.svg" alt="checked">
+              <p>Analyse deiner Problemzonen</p>
+            </div>
+            <div class="item">
+              <img src="./images/dest/checked.svg" alt="checked">
+              <p>Ermittlung deiner Ziele</p>
+            </div>
+            <div class="item">
+              <img src="./images/dest/checked.svg" alt="checked">
+              <p>Erstellung eines individuellen Trainingplans</p>
+            </div>
+            <div class="item">
+              <img src="./images/dest/checked.svg" alt="checked">
+              <p>Schnellere Erfolge</p>
+            </div>
+          </div>
+          <div class="mt-5 text-center text-lg-start">
+            <a class="btn btn-outline-dark " href="#" role="button">Probetraining vereinbaren</a>
+          </div>
+        </div>
+        <div class="col-auto check__graphic mb-5 mb-xl-0 order-1 d-none d-lg-block">
+          <img class="hex-small-first" src="./images/dest/hex-small.svg" alt="hexagon" />
+          <img class="hex-small-second" src="./images/dest/hex-big.svg" alt="hexagon" />
+          <div class="hexagon hex-image">
+            <img src="./images/dest/haxagon-bild.png" alt="">
+          </div>
+          <div class="hexagon hex-back"></div>
+        </div>
+      </div>
+      </div>
+      <div class="dumbbell position-absolute">
+        <img class="w-100" src="./images/dest/dumbbell.svg" alt="Hantel logo">
+      </div>
+    </section>
+<!-- -------------------------section 6 recommend--------------------------------------   -->
+    <section class="recommend">
+      <div class="container text-center">
+        <div>
+          <img class="my-5" src="./images/dest/checkIcon.svg" alt="Fragezeichen icon">
+          <h2 class="line--behind mb-3"><span>schon gewusst?</span></h2>
+          <h3>Ausdauertraining verbessert die Durchblutung in Ihrem Körper und somit
+            werden die Zellen besser mit Nährstoffen versorgt. Davon profitiert
+            auch Ihr Gehirn und gleichzeitig Ihre Konzentrationsfähigkeit.</h3>
+          <div class="mt-5 text-center">
+            <a class="btn btn-outline-dark " href="#" role="button">Probetraining vereinbaren</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- -------------------------section 7 game --------------------------------------   -->
+    <section class="game-banner">
+      <div class="container-fluid maxW1600">
+        <div class="row">
+
+          <div class="game__text text-center text-xl-start col-xl-6 pb-5 order-xl-2">
+            <h2 class="mb-3">Fitness Glücksrad</h2>
+            <p class="">
+              Heute schon am Rad gedreht?
+            </p>
+          </div>
+
+          <div class="game__question d-none d-xl-block">
+            <h2 class="mb-5">Schon mal was gewonnen?</h2>
+
+            <div class="position-relative ms-3 ms-lg-5 ps-3">
+              <p class="fw-bold">Hauptgewinn: 6 Monate kostenlose PREMIUM-Mitgliedschaft!</p>
+              <p>Bei uns gewinnt jeder! Dreh eine Runde am Glücksrad.</p>
+              <p>Aber Achtung！Du hast nur einen Versuch!</p>
+              <img class="game__textArrow position-absolute bottom-100 end-100" src="./images/dest/Icon%20feather-arrow-down-right.svg" alt="arrow">
+            </div>
+          </div>
+
+          <div class="my-4 col-xl-6 d-flex justify-content-evenly order-xl-1">
+            <div class="game-wheel">
+              <img class="border-bg" src="./images/dest/rad.png" alt="">
+              <img class="main-bg" src="./images/dest/rad-bg.png" alt="">
+              <button class="text-center border-0 shadow-lg" >Jetzt Drehen</button>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+<!-- -------------------------section 8--------------------------------------   -->
+    <section class="recommend">
+      <div class="container text-center">
+        <div>
+          <img class="my-5" src="./images/dest/checkIcon.svg" alt="Fragezeichen icon">
+          <h2 class="line--behind mb-3"><span>vereinbare jetzt</span> <span>dein</span> <span>beratungsgespräch</span></h2>
+          <h3>und erfahre wie auch du dein ziel erreichst. Starte jetzt mit den experten.</h3>
+          <div class="mt-5 text-center">
+            <a class="btn btn-outline-dark " href="#" role="button">Probetraining vereinbaren</a>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- -------------------------section 9--------------------------------------   -->
+   
+  </main>
+
+  <!-- -------------------------FOOTER--------------------------------------   -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap row a">
+        <div class="footer__contact footer__item col-sm-6 col-lg-3 mb-3">
+          <h5>Kontakt & Anfahrt</h5>
+          <ul>FINEST FITNESS
+            <li>Mühlheimer Straße 209</li>
+            <li>63075 Offenbach am Main</li>
+          </ul>
+          <ul>Tel.:
+            <li><a href="tel:069861111">0 69 86 11 11</a></li>
+          </ul>
+          <ul>E-Mail:
+            <li><a href="mailto:kontakt@finest-fit.de">kontakt@finest-fit.de</a></li>
+          </ul>
+        </div>
+        <div class="footer__hours footer__item col-sm-6 col-lg-3 mb-3">
+          <h5>Öffnungszeiten</h5>
+          <ul>Mo, Mi, Fr:
+            <li>08:00 Uhr – 22:00 Uhr</li>
+          </ul>
+
+          <ul>Di, Do:
+            <li>10:00 Uhr – 22:00 Uhr</li>
+          </ul>
+
+          <ul>Sa:
+            <li>11:00 Uhr – 18:00 Uhr</li>
+          </ul>
+
+          <ul>So:
+            <li>10:00 Uhr – 16:00 Uhr</li>
+          </ul>
+        </div>
+        <div class="footer__follow footer__item  col-sm-6 col-lg-3 mb-3">
+          <h5>Folge uns!</h5>
+          <div class="follow_list">
+            <ul>
+              <li><a href="#"><img src="./images/dest/facebookIcon.svg" alt="facebook"></a></li>
+              <li><a href="#"><img src="./images/dest/instagramIcon.png" alt="instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__rights footer__item col-sm-6 col-lg-3 mb-3">
+          <h5>Rechtliches</h5>
+          <ul class="rights__list">
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Bildrechte</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li>|</li>
+          <li><a href="#">Datenschutz</a></li>
+          <li>|</li>
+          <li><a href="#">Bildrechte</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Copyright 2020 finest Fitness | </a></li>
+          <li>|</li>
+          <li><a href="#">Powered by fitmotion</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/vendor/anime.min.js"></script>
+    <script src="./js/app.min.js"></script>
+  </body>
+</html>

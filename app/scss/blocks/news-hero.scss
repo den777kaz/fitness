@@ -1,0 +1,47 @@
+.news-hero {
+  padding: 5rem 0 0 0;
+
+  @media (max-width: 500px) {
+    padding: 2rem 0 0 0;
+  }
+
+
+  .news__graphic {
+    position: absolute;
+    z-index: 3;
+    bottom: 70%;
+    right: 80%;
+
+    width: 40%;
+    max-width: 500px;
+    min-width: 200px;
+
+    @media (max-width: 1200px) {
+      bottom: 120%;
+      right: auto;
+      left: 0;
+      max-width: 300px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .news__image {
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      height: 90%;
+      width: 200%;
+
+      top: -10%;
+      right: -10%;
+      background-color: $secondary;
+    }
+  }
+}

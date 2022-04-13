@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/app.min.css" />
+    <title>Fitness</title>
+</head>
+<body class="bg-dark">
+<!-- ------------------------header---------------------------------------- -->
+<header class="header w-100 position-absolute start-0 top-0">
+    <div class="container-fluid maxW1600">
+        <div class="border-bottom border-dark d-flex justify-content-between align-items-end">
+            <!--        dropdown mobile-->
+            <div class="dropdown d-lg-none">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menü
+                </button>
+                <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenu2">
+                    <li><a class="dropdown-item fs-3 text-center" href="./index.html">Startseite</a></li>
+                    <li><a class="dropdown-item fs-3" href="./leistung.html">Leistung</a></li>
+                    <li><a class="dropdown-item fs-3" href="./courses.html">Kurse</a></li>
+                    <li><a class="dropdown-item fs-3" href="./about.html">Über uns</a></li>
+                    <li><a class="dropdown-item fs-3" href="./news.html">News</a></li>
+                    <li><a class="dropdown-item fs-3" href="./contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <nav class="header__navbar d-none d-lg-block pt-4">
+                <ul class="d-flex">
+                    <li >
+                        <a href="./index.html">Startseite</a>
+                    </li>
+                    <li>
+                        <a href="./leistung.html">Leistung</a>
+                    </li>
+                    <li>
+                        <a href="./courses.html">Kurse</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">Über uns</a>
+                    </li>
+                    <li class="active">
+                        <a href="./news.html">News</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__logo bg-secondary d-flex justify-content-center align-items-center px-2 py-1">
+                <img src="./images/dest/logo.png" alt="Logo">
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="mt-3">
+    <!-- -------------------------section 1 hero news --------------------------------------   -->
+    <section class="news-hero">
+        <div class="container-fluid maxW1600">
+            <div class="row">
+                <div class="col-7 col-lg-6 text-end ms-auto mb-5">
+                    <h2>HIER FINDEST DU ALLE UNSERE NEWS</h2>
+                </div>
+                <div class=" col-12 col-xl-10 ms-xl-auto">
+                    <div class="position-relative">
+                        <div class="news__graphic">
+                            <img src="./images/dest/news.svg" alt="">
+                        </div>
+                        <div class="news__image">
+                            <img class="img-fluid bg-danger news-clip-path" src="./images/dest/Gruppe 66.png" alt="fgre dfg">
+                            <svg height="0" width="0">
+                                <clipPath id="svgPath-news" clipPathUnits="objectBoundingBox"><path d="M1,0.002 H0 V0.65 C0,0.65,0.012,0.736,0.024,0.755 C0.037,0.775,0.028,0.81,0.035,0.843 C0.041,0.877,0.046,0.863,0.054,0.898 C0.064,0.976,0.112,1,0.129,1 H1 V0.002"></path></clipPath>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave--border">
+        <img src="./images/dest/home/wave.svg" alt="wave">
+    </div>
+
+    <!-- -------------------------section 2  news cards --------------------------------------   -->
+
+    <section class="news-cards">
+        <div class="container maxW1600">
+<!--            card-1-->
+            <div class="cards row news--card align-items-center position-relative">
+                <div class="card__image col-12 col-lg-7 g-0 position-relative z-index-1">
+                    <img class="img-fluid" src="./images/dest/news-card.png" alt="aaaaa">
+                </div>
+                <div class="col-12 col-lg-5 g-0 p-3 position-relative z-index-2">
+                    <article class="card__content content--right">
+                        <span class="fs-5">21. November 2020</span>
+                        <h3 class="fs-2">Training Zuhause</h3>
+                        <p class="fs-5 mt-4 pe-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque cumque debitis dolor facere, fugiat itaque adipisicing elit. Ad adipisci atque cumque debitis dolor facere, fugiat itaque laborum laborum magni maiores, molestias non officia quibusdam sed sunt tenetur, velit. Optio!</p>
+                    </article>
+                </div>
+                <div class="card__bg card__bg-right"></div>
+            </div>
+
+<!--            card-2-->
+            <div class="">
+                <div class="row news--card align-items-center position-relative">
+                    <div class="col-12 col-lg-5 g-0 p-3 position-relative z-index-2 order-1 order-lg-0">
+                        <article class="card__content content--left text-end order-2 order-lg-0">
+                            <span class="fs-5">21. November 2020</span>
+                            <h3 class="fs-2">Training Zuhause</h3>
+                            <p class="fs-5 mt-4 ps-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque cumque debitis dolor facere, fugiat itaque adipisicing elit. Ad adipisci atque cumque debitis dolor facere, fugiat itaque laborum laborum magni maiores, molestias non officia quibusdam sed sunt tenetur, velit. Optio!</p>
+                        </article>
+                    </div>
+                    <div class="card__image col-12 col-lg-7 g-0 position-relative z-index-1">
+                        <img class="img-fluid" src="./images/dest/news-card.png" alt="aaaaa">
+                    </div>
+                    <div class="card__bg card__bg-left"></div>
+                </div>
+                <div class="my-5 pt-5 text-center">
+                    <a class="btn btn-outline-dark " href="#" role="button">Probetraining vereinbaren</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- -------------------------FOOTER--------------------------------------   -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrap row">
+            <div class="footer__contact footer__item col-sm-6 col-lg-3 mb-3">
+                <h5>Kontakt & Anfahrt</h5>
+                <ul>FINEST FITNESS
+                    <li>Mühlheimer Straße 209</li>
+                    <li>63075 Offenbach am Main</li>
+                </ul>
+                <ul>Tel.:
+                    <li><a href="tel:069861111">0 69 86 11 11</a></li>
+                </ul>
+                <ul>E-Mail:
+                    <li><a href="mailto:kontakt@finest-fit.de">kontakt@finest-fit.de</a></li>
+                </ul>
+            </div>
+            <div class="footer__hours footer__item col-sm-6 col-lg-3 mb-3">
+                <h5>Öffnungszeiten</h5>
+                <ul>Mo, Mi, Fr:
+                    <li>08:00 Uhr – 22:00 Uhr</li>
+                </ul>
+
+                <ul>Di, Do:
+                    <li>10:00 Uhr – 22:00 Uhr</li>
+                </ul>
+
+                <ul>Sa:
+                    <li>11:00 Uhr – 18:00 Uhr</li>
+                </ul>
+
+                <ul>So:
+                    <li>10:00 Uhr – 16:00 Uhr</li>
+                </ul>
+            </div>
+            <div class="footer__follow footer__item  col-sm-6 col-lg-3 mb-3">
+                <h5>Folge uns!</h5>
+                <div class="follow_list">
+                    <ul>
+                        <li><a href="#"><img src="./images/dest/facebookIcon.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="./images/dest/instagramIcon.png" alt="instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__rights footer__item col-sm-6 col-lg-3 mb-3">
+                <h5>Rechtliches</h5>
+                <ul class="rights__list">
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Bildrechte</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <ul>
+                <li><a href="#">Impressum</a></li>
+                <li>|</li>
+                <li><a href="#">Datenschutz</a></li>
+                <li>|</li>
+                <li><a href="#">Bildrechte</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Copyright 2020 finest Fitness | </a></li>
+                <li>|</li>
+                <li><a href="#">Powered by fitmotion</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/app.min.js"></script>
+</body>
+</html>

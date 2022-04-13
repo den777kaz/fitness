@@ -1,0 +1,35 @@
+.sidebar {
+  ul {
+    li {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        transform: scale(0);
+        height: 1px;
+        background-color: black;
+        left: 0;
+        bottom: 0;
+
+        transform-origin: left;
+        transition: transform .4s ease-in-out ;
+      }
+
+      &:hover:before {
+        transform: scale(1);
+      }
+    }
+
+    li.line--behind:after {
+      position: relative;
+      content: url("../../images/dest/Pfad 471.svg");
+      margin-left: 5px;
+      z-index: 3;
+
+    }
+  }
+}

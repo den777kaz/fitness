@@ -1,0 +1,66 @@
+$wheel-size: 600px;
+.game-wheel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: $wheel-size;
+  height: $wheel-size;
+
+  @media (max-width: 700px) {
+    width: 400px;
+    height: 400px;
+  }
+  @media (max-width: 500px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  img {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    //transition: transform ;
+    transform-origin: center;
+  }
+  .main-bg {
+    z-index: 0;
+    animation: wheel-rotate 5s ease-in-out infinite;
+  }
+  button {
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(133.87deg, rgba(239, 239, 217, 0.94) 13.03%, rgba(247, 225, 67, 0.82) 50.77%, rgba(226, 163, 39, 0.92) 86.87%), #C4C4C4;
+    font-family: 'anton',sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+
+    @media (max-width: 700px) {
+      width: 130px;
+      height: 130px;
+      font-size: 25px;
+    }
+  }
+}
+
+@keyframes wheel-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(430deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}

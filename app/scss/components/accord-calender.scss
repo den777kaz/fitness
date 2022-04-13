@@ -1,0 +1,92 @@
+.accord-calender {
+
+
+
+  .accordion-item {
+    //border: none !important;
+    //outline: none !important;
+    //margin: 0;
+    //padding: 0;
+  }
+  .accordion-item .accordion-button {
+    border-left: 1px solid #fff;
+  }
+  .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0;
+    border-left: none;
+
+    @media (max-width: 1200px) {
+      border-top-left-radius: 0;
+    }
+  }
+  .accordion-item:last-of-type .accordion-button {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 0;
+
+    @media (max-width: 1200px) {
+      border-top-right-radius: 0;
+    }
+  }
+
+  .accordion-button {
+    background: $dark;
+    color: $white;
+    padding: 0;
+    margin: 0;
+    border: none;
+
+
+    @media (max-width: 1200px) {
+
+      border-bottom: 1px solid #fff;
+      padding: 8px 50px;
+    }
+    @media (min-width: 1200px) {
+
+      display: block;
+    }
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("../../images/dest/accord-arrow.svg");
+  }
+  .accordion-button:focus {
+    //background: $dark;
+    //border-color: inherit;
+  }
+  .accordion-button:after {
+    background-image: url("../../images/dest/accord-arrow.svg");
+    @media (min-width: 1200px) {
+
+      display: none;
+    }
+
+  }
+
+  .accordion-body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+    outline-offset: 0;
+    outline-width: 0;
+    & > * {
+      padding: 10px;
+      margin: 0;
+      width: 100%;
+
+      &:hover {
+        background-color: lightgrey;
+      }
+    }
+    & > * + * {
+      border-top: 1px solid lightgrey;
+    }
+  }
+
+  .accordion-collapse {
+    border: 1px solid lightgrey;
+  }
+}
